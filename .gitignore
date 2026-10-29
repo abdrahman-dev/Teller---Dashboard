@@ -1,0 +1,21 @@
+# Compiled output
+out/
+
+# SQLite database file (created at runtime)
+accounts.db
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# OS junk
+.DS_Store
+Thumbs.db
+*.class
+
+# Build artifacts
+*.jar
+!lib/*.jar
