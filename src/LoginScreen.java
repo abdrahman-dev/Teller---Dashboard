@@ -67,6 +67,12 @@ public class LoginScreen extends JFrame {
         card.add(loginButton, gbc);
 
         gbc.gridy = 7;
+        gbc.insets = new Insets(10, 0, 0, 0);
+        JButton registerButton = new JButton("Create Account");
+        registerButton.setPreferredSize(new Dimension(150, 42));
+        card.add(registerButton, gbc);
+
+        gbc.gridy = 8;
         gbc.insets = new Insets(16, 0, 0, 0);
         JLabel credentials = new JLabel("Default: admin / admin123");
         credentials.setFont(credentials.getFont().deriveFont(11f));
@@ -88,6 +94,11 @@ public class LoginScreen extends JFrame {
         getRootPane().setDefaultButton(loginButton);
 
         loginButton.addActionListener((ActionEvent e) -> login());
+        registerButton.addActionListener((ActionEvent e) -> {
+            dispose();
+            RegisterScreen registerScreen = new RegisterScreen();
+            registerScreen.setVisible(true);
+        });
 
         usernameField.requestFocusInWindow();
 

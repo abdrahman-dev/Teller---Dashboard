@@ -4,6 +4,9 @@ out/
 # SQLite database file (created at runtime)
 accounts.db
 
+# Assignment deliverables (not part of GitHub repo)
+Assignment_2_System_Analysis.docx
+
 # IDE
 .vscode/
 .idea/
